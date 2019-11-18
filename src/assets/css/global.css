@@ -15,6 +15,10 @@ html {
   @apply text-black;
 }
 
+body {
+  @apply w-screen overflow-x-hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -65,6 +69,15 @@ button {
   @apply py-4 px-6 rounded-sm text-left self-start;
   font-weight: 900;
   font-family: "Source Serif Pro", serif;
+}
+
+input {
+  @apply py-4 px-4 rounded-sm border-grey font-bold;
+  border-width: 1px;
+}
+
+label {
+  @apply text-xs text-grey mb-1;
 }
 
 .max-width {

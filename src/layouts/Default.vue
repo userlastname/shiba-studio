@@ -9,7 +9,11 @@
       />
     </header>
     <slot />
-    <footer class="w-full p-8 bg-black mt-8 flex-grow z-10"></footer>
+    <footer class="w-full p-8 py-10 bg-black flex-grow z-10">
+      <div class="max-width flex items-center justify-between w-full">
+        <h5 class="ml-auto text-white">Shiba Studio © 2019</h5>
+      </div>
+    </footer>
   </div>
 </template>
 

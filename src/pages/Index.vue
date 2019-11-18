@@ -31,7 +31,7 @@
 
       <p>
         Building beautiful static websites with a focus on performance and
-        accessibility.
+        usability.
       </p>
 
       <p>
@@ -47,11 +47,18 @@
         User research to help businesses understand how to create more value.
       </p>
     </section>
+
+    <PokeForm class="mt-12" />
   </Layout>
 </template>
 
 <script>
-export default {};
+import PokeForm from "~/components/poke-form.vue";
+export default {
+  components: {
+    PokeForm
+  }
+};
 </script>
 
 <style>
