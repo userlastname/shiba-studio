@@ -1,33 +1,73 @@
 <template>
   <Layout>
+    <section class="px-12 md:px-24 w-full flex flex-col z-10 max-width">
+      <h1>
+        We help you launch highly effective web projects, through beautiful code
+        and design
+      </h1>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+      <a href="#poke" title="Get Started With Shiba Studio"
+        ><button class="bg-yellow text-lg mt-8">
+          Let's Chat, No Strings Attached
+        </button></a
+      >
 
-    <h1>Hello, world!</h1>
+      <span class="green-banner"></span>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
+      <h3 class="sub-heading mt-12 md:mt-32">Shiba Studio is...</h3>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+      <p>
+        Naj and Dan, two lifelong friends from Sydney, Australia. Naj is a
+        talented illustrator and creative, while Dan specialises in UI/UX and
+        frontend development.
+      </p>
 
+      <p>
+        Together, they help companies create delightful, brand-driven web
+        projects using modern static site and app technology.
+      </p>
+
+      <h3 class="sub-heading mt-4 md:mt-8">We specialize in...</h3>
+
+      <p>
+        Building beautiful static websites with a focus on performance and
+        accessibility.
+      </p>
+
+      <p>
+        Designing market-relevant brands with strong personality.
+      </p>
+
+      <p>
+        Developing and launching web applications to help startups validate
+        their ideas.
+      </p>
+
+      <p>
+        User research to help businesses understand how to create more value.
+      </p>
+    </section>
   </Layout>
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'Hello, world!'
-  }
-}
+export default {};
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
+.green-banner {
+  @apply absolute bg-green;
+  z-index: -1;
+  width: 120%;
+  left: -10%;
+  height: 300px;
+  transform: rotate(-7deg);
+  max-width: var(--max-container);
+}
+
+@media (max-width: 600px) {
+  .green-banner {
+    height: 160px;
+  }
 }
 </style>
