@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="overflow-hidden min-h-screen flex flex-col items-center">
     <header class="px-12 md:px-24 pt-24 pb-4 w-full flex max-width">
       <g-image
         src="~/assets/brand/logo.png"

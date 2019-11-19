@@ -26,10 +26,14 @@
         Together, they help companies create delightful, brand-driven web
         projects using modern static site and app technology.
       </p>
+    </section>
 
-      <projects class="mt-4 md:mt-8" />
+    <projects />
 
-      <h3 class="sub-heading mt-4 md:mt-8">We specialize in...</h3>
+    <section
+      class="px-12 md:px-24 w-full flex flex-col z-10 max-width mt-8 md:mt-12"
+    >
+      <h3 class="sub-heading">We specialize in...</h3>
 
       <p>
         Building beautiful static websites with a focus on performance and

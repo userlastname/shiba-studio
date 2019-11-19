@@ -72,10 +72,11 @@ input {
   @apply py-4 px-4 rounded-sm border-grey font-bold;
   border-width: 1px;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  font-size: 16px;
 }
 
 label {
-  @apply text-xs text-grey flex flex-col;
+  @apply text-xs text-grey flex flex-col text-grey;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 
@@ -85,13 +86,6 @@ label input {
 
 .max-width {
   max-width: 1200px;
-}
-
-.container {
-  @apply overflow-hidden min-h-screen flex flex-col items-center;
-  --max-container: 1600px;
-  max-width: var(--max-container);
-  margin: 0 auto;
 }
 
 .sub-heading {
