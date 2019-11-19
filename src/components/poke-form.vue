@@ -10,6 +10,12 @@
         Poke us and we’ll get in touch!
       </h3>
 
+      <p class="hidden">
+        <label
+          >Don’t fill this out if you're human: <input name="bot-field"
+        /></label>
+      </p>
+
       <label for="name"
         >Your name... <input type="text" name="name" id="name" required
       /></label>
@@ -18,6 +24,8 @@
         >Your email address...
         <input type="email" name="email" id="email" required
       /></label>
+
+      <div data-netlify-recaptcha="true"></div>
 
       <button type="submit" class="bg-yellow text-lg mt-4 w-full text-center">
         Poke Shiba Studio
