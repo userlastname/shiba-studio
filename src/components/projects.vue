@@ -57,6 +57,7 @@ export default {
       const el = this.$refs.scrollable;
 
       function scrollHorizontally(e) {
+        console.log("Scroll Trigger");
         if (el.scrollLeft <= el.scrollWidth - el.clientWidth - 100) {
           e = window.event || e;
           const speed = 5;
