@@ -20,7 +20,7 @@
         >Your name... <input type="text" name="name" id="name" required
       /></label>
 
-      <label for="email" class="mt-6"
+      <label for="email" class="mt-6 mb-4"
         >Your email address...
         <input type="email" name="email" id="email" required
       /></label>
