@@ -63,6 +63,7 @@ h1 {
 
 p {
   @apply text-sm my-3;
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 
 button {
@@ -77,7 +78,11 @@ input {
 }
 
 label {
-  @apply text-xs text-grey mb-1;
+  @apply text-xs text-grey flex flex-col;
+}
+
+label input {
+  @apply mt-2;
 }
 
 .max-width {
@@ -86,7 +91,7 @@ label {
 
 .container {
   @apply overflow-hidden min-h-screen flex flex-col items-center;
-  --max-container: 2000px;
+  --max-container: 1600px;
   max-width: var(--max-container);
   margin: 0 auto;
 }
