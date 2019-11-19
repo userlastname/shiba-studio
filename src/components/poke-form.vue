@@ -1,6 +1,11 @@
 <template>
   <section>
-    <form method="post" name="poke" class="max-width flex flex-col" netlify>
+    <form
+      method="POST"
+      name="poke"
+      class="max-width flex flex-col"
+      data-netlify="true"
+    >
       <h3 class="text-2xl mb-2 px-4 md:px-8 text-center">
         Poke us and we’ll get in touch!
       </h3>
