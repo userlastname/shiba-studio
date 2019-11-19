@@ -27,6 +27,8 @@
         projects using modern static site and app technology.
       </p>
 
+      <projects class="mt-4 md:mt-8" />
+
       <h3 class="sub-heading mt-4 md:mt-8">We specialize in...</h3>
 
       <p>
@@ -48,15 +50,17 @@
       </p>
     </section>
 
-    <PokeForm class="mt-12" />
+    <PokeForm id="poke" class="mt-12" />
   </Layout>
 </template>
 
 <script>
 import PokeForm from "~/components/poke-form.vue";
+import Projects from "~/components/projects.vue";
 export default {
   components: {
-    PokeForm
+    PokeForm,
+    Projects
   }
 };
 </script>
