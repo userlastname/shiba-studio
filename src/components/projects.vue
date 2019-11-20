@@ -1,7 +1,12 @@
 <template>
   <section class="flex items-center justify-center pt-10" ref="trigger">
     <article class="max-width px-12 md:px-24">
-      <span class="non-scrollable"></span>
+      <a
+        target="_blank"
+        :href="projects[projects.length -1].url"
+        :title="projects[projects.length -1].title"
+        class="non-scrollable"
+      ></a>
       <span class="scrollable" ref="scrollable">
         <a
           v-for="project in projects"
@@ -15,7 +20,6 @@
           <h4>{{ project.title }}:</h4>
           <h5>{{ project.description }}</h5>
         </a>
-        <a href="" style="--color: white;" class="project-card"></a>
       </span>
     </article>
   </section>
@@ -48,41 +52,6 @@ export default {
         }
       ]
     };
-  },
-  mounted() {
-    if (process.isClient) {
-      this.lockHorizontalScroll(this.$refs.trigger);
-    }
-  },
-  destroyed() {
-    this.removeEventListeners(this.$refs.trigger);
-  },
-  methods: {
-    lockHorizontalScroll(trigger) {
-      const el = this.$refs.scrollable;
-
-      function scrollHorizontally(e) {
-        if (el.scrollLeft <= el.scrollWidth - el.clientWidth - 100) {
-          e = window.event || e;
-          const speed = 5;
-          const delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
-          el.scrollLeft -= delta * speed;
-          e.preventDefault();
-        }
-        return;
-      }
-
-      if (trigger.addEventListener) {
-        trigger.addEventListener("mousewheel", scrollHorizontally, false);
-        trigger.addEventListener("DOMMouseScroll", scrollHorizontally, false);
-      } else {
-        trigger.attachEvent("onmousewheel", scrollHorizontally);
-      }
-    },
-    removeEventListeners(trigger) {
-      trigger.removeEventListener("mousewheel");
-      trigger.removeEventListener("DOMMouseScroll");
-    }
   }
 };
 </script>
@@ -95,11 +64,22 @@ section {
 
 article .scrollable {
   @apply flex items-center flex-no-wrap overflow-x-scroll relative z-0;
-  -webkit-overflow-scrolling: touch;
 }
 
 .scrollable::-webkit-scrollbar {
-  display: none;
+  -webkit-appearance: none;
+}
+
+.scrollable::-webkit-scrollbar:horizontal {
+  @apply h-2;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  @apply rounded border-4 border-white bg-green cursor-pointer;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  @apply rounded bg-white;
 }
 
 .max-width {
@@ -113,7 +93,7 @@ article .non-scrollable {
 }
 
 article .non-scrollable:after {
-  @apply h-full w-48;
+  @apply h-full w-40;
   content: "";
   background-image: linear-gradient(
     to right,
@@ -123,15 +103,10 @@ article .non-scrollable:after {
 }
 
 .project-card {
-  @apply p-8 rounded-sm text-center flex flex-col items-center justify-center mr-5;
+  @apply p-8 rounded-sm text-center flex flex-col items-center justify-center mr-5 mb-3;
   background: var(--color, "#F4F4F4");
   height: 350px;
   min-width: 350px;
-}
-
-.project-card:nth-last-child(1) {
-  @apply w-64;
-  min-width: 200px;
 }
 
 .project-card h4,
@@ -159,11 +134,7 @@ article .non-scrollable:after {
   }
 
   .project-card {
-    @apply mr-0;
-  }
-
-  .project-card:nth-last-child(1) {
-    @apply hidden;
+    @apply mr-0 mb-0;
   }
 }
 </style>
