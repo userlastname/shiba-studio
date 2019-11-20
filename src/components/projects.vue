@@ -87,8 +87,9 @@ article .scrollable {
 }
 
 article .non-scrollable {
-  @apply absolute h-full overflow-hidden z-10 right-0 top-0 flex justify-end;
+  @apply absolute overflow-hidden z-10 right-0 top-0 flex mb-3 justify-end;
   padding: inherit;
+  height: 350px;
   padding-left: 0px;
 }
 
@@ -98,7 +99,7 @@ article .non-scrollable:after {
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 1) 90%
+    rgba(255, 255, 255, 1) 100%
   );
 }
 
