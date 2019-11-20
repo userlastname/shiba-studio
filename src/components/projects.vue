@@ -67,10 +67,6 @@ export default {
         return;
       }
 
-      if (!el || !trigger) {
-        return;
-      }
-
       if (trigger.addEventListener) {
         trigger.addEventListener("mousewheel", scrollHorizontally, false);
         trigger.addEventListener("DOMMouseScroll", scrollHorizontally, false);
