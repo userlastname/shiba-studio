@@ -50,7 +50,12 @@ export default {
     };
   },
   mounted() {
-    this.lockHorizontalScroll(this.$refs.trigger);
+    if (process.isClient) {
+      this.lockHorizontalScroll(this.$refs.trigger);
+    }
+  },
+  destroyed() {
+    this.removeEventListeners(this.$refs.trigger);
   },
   methods: {
     lockHorizontalScroll(trigger) {
@@ -73,6 +78,10 @@ export default {
       } else {
         trigger.attachEvent("onmousewheel", scrollHorizontally);
       }
+    },
+    removeEventListeners(trigger) {
+      trigger.removeEventListener("mousewheel");
+      trigger.removeEventListener("DOMMouseScroll");
     }
   }
 };
@@ -98,8 +107,9 @@ article .scrollable {
 }
 
 article .non-scrollable {
-  @apply absolute h-full overflow-hidden z-10 right-0 top-0 w-full flex justify-end;
+  @apply absolute h-full overflow-hidden z-10 right-0 top-0 flex justify-end;
   padding: inherit;
+  padding-left: 0px;
 }
 
 article .non-scrollable:after {

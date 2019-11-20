@@ -8,7 +8,7 @@
 
       <a href="#poke" title="Get Started With Shiba Studio"
         ><button class="bg-yellow text-lg mt-8">
-          Let's Chat, No Strings Attached
+          Get Started With Shiba
         </button></a
       >
 
