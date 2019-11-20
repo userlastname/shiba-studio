@@ -5,7 +5,8 @@
         src="~/assets/brand/logo.png"
         width="90"
         quality="100"
-        alt="Shiba Studio - Design & Code Agency Based In Sydney"
+        :immediate="true"
+        alt="Shiba Studio (Logo) - Design and Code In Sydney"
       />
     </header>
     <slot />
