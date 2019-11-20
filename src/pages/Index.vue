@@ -24,7 +24,7 @@
 
       <p>
         Together, they help companies create delightful, brand-driven web
-        projects using modern static site and app technology.
+        projects and identities.
       </p>
     </section>
 
@@ -36,8 +36,7 @@
       <h3 class="sub-heading">We specialize in...</h3>
 
       <p>
-        Building beautiful static websites with a focus on performance and
-        usability.
+        Building beautiful websites with a focus on performance and usability.
       </p>
 
       <p>
@@ -45,8 +44,7 @@
       </p>
 
       <p>
-        Developing and launching web applications to help startups validate
-        their ideas.
+        Designing and building web applications to help startups validate ideas.
       </p>
 
       <p>
