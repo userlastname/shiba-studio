@@ -20,7 +20,7 @@
         frontend development.
       </p>
 
-      <p>Together, they thrive in helping innovators rapidly validate product ideas and brands through web design & development.</p>
+      <p>Together, they thrive helping innovators rapidly validate product ideas and brands through web design & development.</p>
     </section>
 
     <projects />
