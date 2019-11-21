@@ -16,7 +16,7 @@
 
       <p>
         Naj and Dan, two lifelong friends from Sydney. Naj is a
-        talented illustrator and creative, while Dan specialises in UI/UX and
+        talented illustrator and creative, while Dan specialises in UI/UX design and
         frontend development.
       </p>
 
