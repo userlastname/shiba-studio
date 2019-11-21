@@ -32,10 +32,9 @@ export default {
     return {
       projects: [
         {
-          title: "Tribefire XP",
-          description: "An engagement platform for gamers",
-          url:
-            "https://dribbble.com/danielpalmer/projects/1187245-Tribefire-XP",
+          title: "Kick",
+          description: "Giveaways For Streamers and Gamers",
+          url: "https://www.kick.gg",
           color: "#BEFFE8"
         },
         {
@@ -49,6 +48,13 @@ export default {
           description: "Auto-Generating Portfolios for Web Designers",
           url: "https://www.makerwing.com",
           color: "#F5C1FF"
+        },
+        {
+          title: "Tribefire XP",
+          description: "An engagement platform for gamers",
+          url:
+            "https://dribbble.com/danielpalmer/projects/1187245-Tribefire-XP",
+          color: "#FFF1AE"
         }
       ]
     };

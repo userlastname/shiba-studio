@@ -1,12 +1,13 @@
 <template>
   <div class="overflow-hidden min-h-screen flex flex-col items-center relative">
-    <header class="px-12 md:px-24 pt-24 pb-4 w-full flex max-width">
+    <header class="px-12 md:px-24 pt-10 md:pt-24 pb-4 w-full flex max-width">
       <g-image
-        src="~/assets/brand/logo.png"
-        width="90"
+        src="~/assets/brand/logo.svg"
+        width="120"
         quality="100"
         :immediate="true"
         alt="Shiba Studio (Logo) - Design and Code In Sydney"
+        id="shiba-logo"
       />
     </header>
     <slot />
@@ -18,4 +19,8 @@
   </div>
 </template>
 
-<style></style>
+<style>
+#shiba-logo {
+  width: 80px;
+}
+</style>
