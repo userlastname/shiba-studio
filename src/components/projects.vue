@@ -32,21 +32,21 @@ export default {
     return {
       projects: [
         {
-          title: "Kick",
-          description: "Giveaways For Streamers and Gamers",
-          url: "https://www.kick.gg",
-          color: "#BEFFE8"
-        },
-        {
           title: "Inboxmood",
           description: "Mood and Productivity Tracking",
           url: "https://www.inboxmood.com",
-          color: "#F4F4F4"
+          color: "#BEFFE8"
         },
         {
           title: "Makerwing",
           description: "Auto-Generating Portfolios for Web Designers",
           url: "https://www.makerwing.com",
+          color: "#F4F4F4"
+        },
+        {
+          title: "Kick",
+          description: "Giveaways For Streamers and Gamers",
+          url: "https://www.kick.gg",
           color: "#F5C1FF"
         },
         {
